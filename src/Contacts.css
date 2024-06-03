@@ -1,0 +1,32 @@
+h1 {
+    color: #daecfc !important;
+}
+
+.tag {
+    background-color: #01B4E4;
+    display: flex;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.tag a {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactCard{
+    min-width: 200px;
+    background-color: rgb(250, 251, 255);
+    width: 15vw;    
+}
+
+.contactCard:hover {
+    box-shadow: 3px 5px 20px #01B4E4;
+}
+
+.contactCard h4 {
+    margin-top: 0px;
+}

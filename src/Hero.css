@@ -1,0 +1,20 @@
+#heroDiv {
+    background-color: #091521;
+    height: 80vh;
+    padding: 50px;
+    background-image: url("src/assets/image3.png");
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heroDiv h1 {
+    color: whitesmoke;
+    font-family: "Raleway", sans-serif;
+    padding-top: 120px;
+    align-content: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 600;
+}

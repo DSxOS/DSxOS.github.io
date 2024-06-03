@@ -1,0 +1,60 @@
+.page {
+  background-color: #091521;
+  opacity: 1;
+  padding-top: 80px;
+}
+
+.page h2 {
+  color: #66D9FF;
+  font-family: "Raleway", sans-serif;
+  padding-inline: 50px;
+}
+
+.page div {
+  color: #daecfc;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  
+}
+
+#footer {
+  background-color: #091521;
+  padding-bottom: 80px;
+}
+
+.featureDesc {
+  padding-inline: 50px;
+}
+
+#intro {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 200;
+   font-family: "Raleway", sans-serif;
+}
+
+#content {
+  background-color: #091521;
+}
+
+#divider {
+  background-color: darkgray;
+  min-width: 10vw !important;
+  width: 10vw !important;
+  align-self: center;
+  margin-top: 70px;
+  border-width: 2px;
+
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+

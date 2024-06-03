@@ -1,0 +1,14 @@
+#register button {
+    background-color: #dc7805;
+    color: whitesmoke;
+}
+
+#register .ant-input-affix-wrapper {
+    background-color: #daecfc;
+    border-color: #daecfc;
+}
+
+#register button:hover {
+    box-shadow: 0px 0px 5px #01B4E4;
+    border-color:#dc7805;
+}
