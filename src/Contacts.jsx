@@ -1,6 +1,7 @@
 import {Flex, Typography, Card, Tag} from 'antd'
 import { MailOutlined, LinkedinOutlined, GlobalOutlined } from '@ant-design/icons';
 import "./Contacts.css"
+import finestImage from '/finest.png'
 
 function Contacts() {
     return <>
@@ -22,7 +23,7 @@ function Contacts() {
                     </Tag>
                 </Flex>
             </Card>
-            <Card bordered={false} className="contactCard" cover={<img alt="profilePhoto" src="public/finest.png"/>}>
+            <Card bordered={false} className="contactCard" cover={<img alt="profilePhoto" src={finestImage} />}>
                 <h4>FinEst Centre for Smart Cities</h4>
                 <Card.Meta description="Centre under TalTech"></Card.Meta>
                 <Flex align="center">

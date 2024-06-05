@@ -1,5 +1,11 @@
 import { useState } from 'react'
-import reactLogo from '/public/react.svg'
+import reactLogo from '/react.svg'
+import hardwareImage from '/hardware.jpg'
+import databaseImage from '/database.jpg'
+import digitalImage from '/digital.jpg'
+import informationImage from '/information.jpg'
+import openImage from '/open.jpg'
+import apiImage from '/api.jpg'
 import { Flex, Divider, Layout, Menu, Image, Row, Col, ConfigProvider, Typography} from 'antd';
 const { Header, Content, Footer } = Layout;
 import Hero from './Hero';
@@ -66,7 +72,7 @@ function App() {
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
-          <img className="logo" src="public/react.svg" alt="" />  
+          <img className="logo" src={reactLogo} alt="" />  
           <ConfigProvider  
           theme={{
             components: {
@@ -122,12 +128,12 @@ function App() {
                 </Flex>
               </Col>
               <Col span={10}>
-                <Image preview={false} src="public/digital.jpg"></Image>
+                <Image preview={false} src={digitalImage}></Image>
                 </Col>
             </Row>
             <Row className='page'>
               <Col span={10}>
-                <Image preview={false} src='public/api.jpg'></Image>
+                <Image preview={false} src={apiImage}></Image>
               </Col>
               <Col span={10}>
                 <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
@@ -154,14 +160,14 @@ function App() {
                 </Flex>
               </Col>
               <Col span={10}>
-                <Image preview={false} src='public/database.jpg'>
+                <Image preview={false} src={databaseImage}>
 
                 </Image>
               </Col>
             </Row>
             <Row className='page'>
             <Col span={10}>
-                <Image preview={false} src='public/information.jpg'>
+                <Image preview={false} src={informationImage}>
 
                 </Image>
               </Col>
@@ -192,14 +198,14 @@ function App() {
                 </Flex>
               </Col>
               <Col span={10}>
-                <Image preview={false} src='public/open.jpg'>
+                <Image preview={false} src={openImage}>
 
                 </Image>
               </Col>
             </Row>
             <Row className='page'>
             <Col span={10}>
-                <Image preview={false} src='public/hardware.jpg'>
+                <Image preview={false} src={hardwareImage}>
 
                 </Image>
               </Col>
