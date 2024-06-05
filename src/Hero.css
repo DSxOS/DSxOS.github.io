@@ -2,7 +2,7 @@
     background-color: #091521;
     height: 80vh;
     padding: 50px;
-    background-image: url("src/assets/image3.png");
+    background-image: url("public/image3.png");
     background-attachment: fixed;
     background-position:top;
     background-repeat: no-repeat;

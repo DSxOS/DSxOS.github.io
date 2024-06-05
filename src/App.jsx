@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '/public/react.svg'
 import { Flex, Divider, Layout, Menu, Image, Row, Col, ConfigProvider, Typography} from 'antd';
 const { Header, Content, Footer } = Layout;
 import Hero from './Hero';
@@ -66,7 +66,7 @@ function App() {
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
-          <img className="logo" src="src/assets/react.svg" alt="" />  
+          <img className="logo" src="public/react.svg" alt="" />  
           <ConfigProvider  
           theme={{
             components: {
@@ -122,12 +122,12 @@ function App() {
                 </Flex>
               </Col>
               <Col span={10}>
-                <Image preview={false} src="src/assets/digital.jpg"></Image>
+                <Image preview={false} src="public/digital.jpg"></Image>
                 </Col>
             </Row>
             <Row className='page'>
               <Col span={10}>
-                <Image preview={false} src='src/assets/api.jpg'></Image>
+                <Image preview={false} src='public/api.jpg'></Image>
               </Col>
               <Col span={10}>
                 <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
@@ -154,14 +154,14 @@ function App() {
                 </Flex>
               </Col>
               <Col span={10}>
-                <Image preview={false} src='src/assets/database.jpg'>
+                <Image preview={false} src='public/database.jpg'>
 
                 </Image>
               </Col>
             </Row>
             <Row className='page'>
             <Col span={10}>
-                <Image preview={false} src='src/assets/information.jpg'>
+                <Image preview={false} src='public/information.jpg'>
 
                 </Image>
               </Col>
@@ -192,14 +192,14 @@ function App() {
                 </Flex>
               </Col>
               <Col span={10}>
-                <Image preview={false} src='src/assets/open.jpg'>
+                <Image preview={false} src='public/open.jpg'>
 
                 </Image>
               </Col>
             </Row>
             <Row className='page'>
             <Col span={10}>
-                <Image preview={false} src='src/assets/hardware.jpg'>
+                <Image preview={false} src='public/hardware.jpg'>
 
                 </Image>
               </Col>
