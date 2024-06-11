@@ -1,14 +1,44 @@
 #register button {
     background-color: #dc7805;
+    height: 50px;
+    margin-top: 10px;
+    width: 20%;
+    min-width: 100px;
     color: whitesmoke;
+    font-size: 20px;
+    border: 0px;
 }
 
-#register .ant-input-affix-wrapper {
-    background-color: #daecfc;
-    border-color: #daecfc;
+
+
+.registerText {
+    padding-left: 15% !important;
+}
+
+.registerTitle {
+    color: #dc7805 !important;
+    padding-left: 15% !important;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #register button:hover {
     box-shadow: 0px 0px 5px #01B4E4;
     border-color:#dc7805;
+}
+
+#emailBox {
+    height:40px;
+    width:40%;
+}
+
+@media only screen and (max-width: 800px) {
+    #register button {
+        width: 80%;
+    }
+
+    #emailBox {
+        width: 80%;
+    }
+
 }

@@ -58,3 +58,38 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+#hamburgerMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .page h2 {
+    padding: 0px;
+  }
+
+  .extra {
+    max-width: 0px !important;
+  }
+
+  .textCol {
+    max-width: 100% !important;
+    flex-basis: 100%;
+  }
+
+  .imageCol {
+    max-width: 0px !important;
+  }
+
+  #wideMenu {
+    display: none;
+  }
+
+  #hamburgerMenu {
+    display: block;
+    width: 60px;
+    height: 100%;
+  }
+  header {
+    padding-inline: 30px !important;
+  }
+}

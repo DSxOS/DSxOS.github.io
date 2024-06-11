@@ -8,6 +8,7 @@ import openImage from '/open.jpg'
 import apiImage from '/api.jpg'
 import { Flex, Divider, Layout, Menu, Image, Row, Col, ConfigProvider, Typography} from 'antd';
 const { Header, Content, Footer } = Layout;
+import { GithubOutlined } from '@ant-design/icons';
 import Hero from './Hero';
 import Contacts from './Contacts';
 import './App.css'
@@ -86,15 +87,28 @@ function App() {
             
             }}>
             <Menu
+              id="wideMenu"
               theme="dark"
               mode="horizontal"
               defaultSelectedKeys={['home']}
               items={items}
               style={{
-                minWidth: 300,
+                width: 300,
                 fontSize: 16,
               }}
             />   
+            <Menu
+              id="hamburgerMenu"
+              theme="dark"
+              mode="horizontal"
+              items={[{
+                label: (
+                <a style={{marginTop: 0}} href="https://github.com/DSxOS" target="_blank" rel="noopener noreferrer">
+                  <GithubOutlined style={{fontSize:24}} />  
+                </a>),
+                key:"git"
+              }]}
+            />  
           </ConfigProvider>
                          
           
@@ -114,8 +128,8 @@ function App() {
             </Flex>
             
             <Row className='page'>
-              <Col span={4}></Col>
-              <Col span={10}>
+              <Col span={4} className='extra'></Col>
+              <Col span={10} className='textCol'>
                 <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
                     <Typography.Title level={2} align="right" >
@@ -127,15 +141,15 @@ function App() {
                   </div>
                 </Flex>
               </Col>
-              <Col span={10}>
+              <Col span={10} className='imageCol'>
                 <Image preview={false} src={digitalImage}></Image>
                 </Col>
             </Row>
             <Row className='page'>
-              <Col span={10}>
+              <Col span={10} className='imageCol'>
                 <Image preview={false} src={apiImage}></Image>
               </Col>
-              <Col span={10}>
+              <Col span={10} className='textCol'>
                 <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
                     <Typography.Title align='left' level={2}>Open API</Typography.Title>
@@ -145,11 +159,11 @@ function App() {
                   </div>
                 </Flex>
               </Col>
-              <Col span={4}></Col>
+              <Col span={4} className='extra'></Col>
             </Row>
             <Row className='page'>
-              <Col span={4}></Col>
-              <Col span={10}>
+              <Col span={4} className='extra'></Col>
+              <Col span={10} className='textCol'>
               <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
                     <Typography.Title align='right' level={2} >Digital Communication Channels</Typography.Title>
@@ -159,19 +173,15 @@ function App() {
                   </div>
                 </Flex>
               </Col>
-              <Col span={10}>
-                <Image preview={false} src={databaseImage}>
-
-                </Image>
+              <Col span={10} className='imageCol'>
+                <Image preview={false} src={databaseImage}></Image>
               </Col>
             </Row>
             <Row className='page'>
-            <Col span={10}>
-                <Image preview={false} src={informationImage}>
-
-                </Image>
+            <Col span={10} className='imageCol'>
+                <Image preview={false} src={informationImage}></Image>
               </Col>
-              <Col span={10}>
+              <Col span={10} className='textCol'>
               <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
                     <Typography.Title align='left' level={2} >
@@ -183,11 +193,11 @@ function App() {
                   </div>
                 </Flex>
               </Col>
-              <Col span={4}></Col>
+              <Col span={4} className='extra'></Col>
             </Row>
             <Row className='page'>
-              <Col span={4}></Col>
-              <Col span={10}>
+              <Col span={4} className='extra'></Col>
+              <Col span={10} className='textCol'>
               <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
                     <Typography.Title align='right' level={2}>Open-Source Innovation</Typography.Title>
@@ -197,19 +207,15 @@ function App() {
                   </div>
                 </Flex>
               </Col>
-              <Col span={10}>
-                <Image preview={false} src={openImage}>
-
-                </Image>
+              <Col span={10} className='imageCol'>
+                <Image preview={false} src={openImage}></Image>
               </Col>
             </Row>
             <Row className='page'>
-            <Col span={10}>
-                <Image preview={false} src={hardwareImage}>
-
-                </Image>
+            <Col span={10} className='imageCol'>
+                <Image preview={false} src={hardwareImage}></Image>
               </Col>
-              <Col span={10}>
+              <Col span={10} className='textCol'>
               <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
                     <Typography.Title align='left' level={2}>
@@ -221,7 +227,7 @@ function App() {
                   </div>
                 </Flex>
               </Col>
-              <Col span={4}></Col>
+              <Col span={4} className='extra'></Col>
             </Row>
             <CTA></CTA>
           </Content>

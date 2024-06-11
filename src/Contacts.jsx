@@ -5,8 +5,8 @@ import finestImage from '/finest.png'
 
 function Contacts() {
     return <>
-        <Typography.Title level={1}>Contacts</Typography.Title>
-        <Flex gap={"60px"}>
+        <Typography.Title level={1} id="contactTitle">Contacts</Typography.Title>
+        <Flex gap={"60px"} style={{width:"100%", flexWrap:"wrap"}}>
             <Card bordered={false} className="contactCard" cover={<img alt="profilePhoto" src="https://finestcentre.eu/wp-content/uploads/2023/07/tarmo-korotko.jpg" />}>
                 <h4>Dr. Tarmo Korõtko</h4>
                 <Card.Meta description="Senior Researcher"></Card.Meta>
