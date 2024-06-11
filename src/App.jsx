@@ -41,7 +41,7 @@ function App() {
   const items = [
     {
       label: (
-        <a style={{paddingInline: 10}} onClick={() => handleScroll(0)} target="_blank" rel="noopener noreferrer">
+        <a className='menuLink' onClick={() => handleScroll(0)} target="_blank" rel="noopener noreferrer">
           Overview
         </a>
       ),
@@ -49,7 +49,7 @@ function App() {
     },
     {
       label: (
-        <a style={{paddingInline: 10}} href="https://github.com/DSxOS" target="_blank" rel="noopener noreferrer">
+        <a className='menuLink' href="https://github.com/DSxOS" target="_blank" rel="noopener noreferrer">
           Github
         </a>
       ),
@@ -57,7 +57,7 @@ function App() {
     },
     {
       label: (
-        <a style={{paddingInline: 10}} onClick={() => handleScroll(1)} target="_blank" rel="noopener noreferrer">
+        <a className='menuLink' onClick={() => handleScroll(1)} target="_blank" rel="noopener noreferrer">
           Contacts
         </a>
       ),
@@ -92,10 +92,6 @@ function App() {
               mode="horizontal"
               defaultSelectedKeys={['home']}
               items={items}
-              style={{
-                width: 300,
-                fontSize: 16,
-              }}
             />   
             <Menu
               id="hamburgerMenu"
