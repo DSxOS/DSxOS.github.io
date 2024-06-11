@@ -2,7 +2,7 @@
   "name": "dsos-web",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dsxos.github.io/",
+  "homepage": "https://dsxos.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
