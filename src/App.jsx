@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from '/react.svg'
+import dsosLogo from '/logo.png'
 import hardwareImage from '/hardware.jpg'
 import databaseImage from '/database.jpg'
 import digitalImage from '/digital.jpg'
@@ -73,13 +73,13 @@ function App() {
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
-          <img className="logo" src={reactLogo} alt="" />  
+          <img className="logo" src={dsosLogo} alt="" />  
           <ConfigProvider  
           theme={{
             components: {
               Menu: {
                 darkItemSelectedBg: "transparent",
-                darkItemHoverColor:"#66D9FF",
+                darkItemHoverColor:"rgba(255, 255, 255, 0.65)",
                 darkItemSelectedColor: "#66D9FF",
                 horizontalItemBorderRadius: 10,
               }
@@ -115,7 +115,7 @@ function App() {
 
             </Hero>
             <Flex vertical className='page' justify='center' align='center'>
-              <div id="intro" style={{width: "50%"}}>
+              <div id="intro">
               Unlock the endless possibilities that information and communication technologies (ICT) offer to power systems. Our DSxOS platform is designed for seamless integration with emerging ICT applications and services. We enable power system engineers to easily, efficiently, and securely deploy and manage software applications. Stay ahead in a rapidly evolving technical landscape, where adaptability and connectivity converge.
               </div>
               <Divider id="divider">

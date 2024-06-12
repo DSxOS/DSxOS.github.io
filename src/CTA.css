@@ -1,21 +1,30 @@
 #register button {
     background-color: #dc7805;
-    height: 50px;
-    margin-top: 10px;
+    height: 40px;
     width: 20%;
     min-width: 100px;
     color: whitesmoke;
     font-size: 20px;
     border: 0px;
+    margin-left: 10px;
 }
 
+#cta {
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
 
+#cta div {
+    color: #daecfc;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
 
-.registerText {
+#registerText {
     padding-left: 15% !important;
 }
 
-.registerTitle {
+#registerTitle {
     color: #dc7805 !important;
     padding-left: 15% !important;
     padding-bottom: 30px;
@@ -27,18 +36,55 @@
     border-color:#dc7805;
 }
 
+#register {
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+}
+
+#textDiv {
+    width: 60%;
+}
+
 #emailBox {
     height:40px;
-    width:40%;
+    width:50%;
 }
 
 @media only screen and (max-width: 800px) {
     #register button {
-        width: 80%;
+        width: 40%;
+        margin-top: 10px;
+        margin-left: 0px;
+
+    }
+
+    #register {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #registerTitle {
+        padding-inline: 5% !important;
+    }
+
+    #registerText {
+        padding-inline: 5% !important;
+    }
+
+    #textDiv {
+        width: 100%;
+    }
+
+    #cta {
+        flex-direction: column !important;
+        align-items: center;
+        
     }
 
     #emailBox {
-        width: 80%;
+        margin-top: 20px;
+        width: 60%;
     }
 
 }
