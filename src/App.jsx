@@ -99,7 +99,7 @@ function App() {
             <Hero func={() => handleScroll(2)}></Hero>
             <Flex vertical className='page' justify='center' align='center'>
               <div id="intro">
-              Unlock the endless possibilities that information and communication technologies (ICT) offer to power systems. Our DSxOS platform is designed for seamless integration with emerging ICT applications and services. We enable power system engineers to easily, efficiently, and securely deploy and manage software applications. Stay ahead in a rapidly evolving technical landscape, where adaptability and connectivity converge.
+              Unlock the endless possibilities that information and communication technologies (ICT) offer to power systems. DSxOS enables power system engineers to easily deploy and manage software applications, offering seamless integration with emerging ICT applications and services.  Stay ahead in a rapidly evolving technical landscape, where adaptability and connectivity converge.
               </div>
               <Divider id="divider">
 
@@ -115,7 +115,7 @@ function App() {
                       Enabling Digitalisation
                     </Typography.Title>
                     <Typography.Paragraph align="right" className='featureDesc'>
-                      In the process of internal desktop applications development, many different design specs and implementations would be involved, which might cause designers and developers difficulties and duplication and reduce the efficiency of development.
+                      Modern power systems depend on ICT applications, from control and analytics to forecasting and blockchain enabled microtransactions. As a result, power system companies need to engage in software development and operations. DSxOS provides a web-based portal, where power system companies can easily and securely deploy and maintain their software installations and functionality.
                     </Typography.Paragraph>
                   </div>
                 </Flex>
@@ -131,9 +131,9 @@ function App() {
               <Col span={10} className='textCol'>
                 <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
-                    <Typography.Title align='left' level={2}>Open API</Typography.Title>
-                    <Typography.Paragraph align='left' className='featureDesc'>
-                      Seamlessly integrate third-party applications and services through our robust API. Facilitate data exchange, enhance functionality, and create a network of applications that work cohesively to drive efficiency and innovation.
+                    <Typography.Title align='left' level={2}>DSxOS platform</Typography.Title>
+                    <Typography.Paragraph align='left' className='featureDesc'>                      
+                      The DSxOS concept is built around an open software platform installed on-site, and distributed without license fees. This platform interfaces with power system assets and makes their functionality available through an open API. Edge or cloud-based applications use this API to provide the desired functionality in the power system, decoupling the software from the hardware.
                     </Typography.Paragraph>
                   </div>
                 </Flex>
@@ -145,9 +145,9 @@ function App() {
               <Col span={10} className='textCol'>
               <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
-                    <Typography.Title align='right' level={2} >Digital Communication Channels</Typography.Title>
-                    <Typography.Paragraph align='right' className='featureDesc'>
-                    Integrate our assets through digital communication interfaces to ensure your systems are performing and responsive. From real-time data exchange to automated system updates, our platform keeps your operations running smoothly.
+                    <Typography.Title align='right' level={2} >Open API and Digital Communication Channels</Typography.Title>
+                    <Typography.Paragraph align='right' className='featureDesc'>                    
+                      The DSxOS platform provides a robust and open REST API, to seamlessly integrate third-party applications and services. Facilitate data exchange, enhance functionality, and create a network of applications that work cohesively to drive efficiency and innovation.  Focus on building your business and applications instead of figuring out how to connect your assets. Utilise digital communication interfaces to connect your power system devices and create a powerful microgrid. DSxOS supports a wide range of digital communication protocols, including Modbus TCP, MQTT, OCPP and IEC61850.
                     </Typography.Paragraph>
                   </div>
                 </Flex>
@@ -167,7 +167,7 @@ function App() {
                       Common Information Models
                     </Typography.Title>
                     <Typography.Paragraph align='left' className='featureDesc'>
-                      Our platform utilizes common information models to standardize data exchange and interpretation across different systems and sectors.
+                      DSxOS uses common information models, like SunSpec, IEC61970, IEC61968 and OpenADR to standardize data exchange and interpretation. This enables DSxOS to provide a harmonised representation of power system assets, irregardles of brand, make or communication interface.
                     </Typography.Paragraph>
                   </div>
                 </Flex>
@@ -179,9 +179,9 @@ function App() {
               <Col span={10} className='textCol'>
               <Flex style={{height:"100%", padding:"20px"}} justify='flex-end' align='center'>
                   <div>
-                    <Typography.Title align='right' level={2}>Open-Source Innovation</Typography.Title>
+                    <Typography.Title align='right' level={2}>Open Innovation</Typography.Title>
                     <Typography.Paragraph align='right' className='featureDesc'>
-                    Leverage a transparent and modifiable platform that grows through collaborative contributions. With our open-source platform, you're not just adopting technology; you're joining a movement towards innovative, community-driven development.
+                      The DSxOS platform is a transparent and modifiable software layer that grows through collaborative contributions. With our free-for-integration and open-for-development platform, you're not just adopting technology; you're joining a movement towards an innovative, community-driven ecosystem.
                     </Typography.Paragraph>
                   </div>
                 </Flex>
@@ -201,7 +201,7 @@ function App() {
                     Hardware Agnostic
                     </Typography.Title>
                     <Typography.Paragraph align='left' className='featureDesc'>
-                    Our platform is designed to work on different hardware setups and communicate with multiple power system assets. This freedom allows you to optimize existing systems and scale new solutions without compatibility concerns.
+                    The DSxOS platform is built on top of the Linux kernel and designed to be hardware agnostic. This freedom allows to choose your vendors, optimize existing systems and scale solutions without compatibility concerns.
                     </Typography.Paragraph>
                   </div>
                 </Flex>
