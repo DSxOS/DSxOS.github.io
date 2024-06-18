@@ -19,7 +19,9 @@ import CTA from './CTA';
 //Make menu items move on hover
 
 function App() {
-  function handleScroll(type) {
+  const handleScroll = (type) => {
+    console.log("func:" + type)
+
     if(type==0){
       window.scroll({
         top: window.visualViewport.height*0.9,
@@ -30,6 +32,13 @@ function App() {
     else if(type==1) {
       window.scroll({
         top: document.body.scrollHeight,
+        left: 0, 
+        behavior: 'smooth',
+      })
+    }
+    else {
+      window.scroll({
+        top: document.getElementById("intro").offsetHeight+200,
         left: 0, 
         behavior: 'smooth',
       })
@@ -87,9 +96,7 @@ function App() {
         </Header>
         <Layout>
           <Content id="content">
-            <Hero>
-
-            </Hero>
+            <Hero func={() => handleScroll(2)}></Hero>
             <Flex vertical className='page' justify='center' align='center'>
               <div id="intro">
               Unlock the endless possibilities that information and communication technologies (ICT) offer to power systems. Our DSxOS platform is designed for seamless integration with emerging ICT applications and services. We enable power system engineers to easily, efficiently, and securely deploy and manage software applications. Stay ahead in a rapidly evolving technical landscape, where adaptability and connectivity converge.
