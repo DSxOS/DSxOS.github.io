@@ -10,7 +10,6 @@ import { Flex, Divider, Layout, Menu, Image, Row, Col, ConfigProvider, Typograph
 const { Header, Content, Footer } = Layout;
 import { GithubOutlined } from '@ant-design/icons';
 import Hero from './Hero';
-import Contacts from './Contacts';
 import './App.css'
 import CTA from './CTA';
 
@@ -49,16 +48,8 @@ function App() {
     },
     {
       label: (
-        <a className='menuLink' href="https://github.com/DSxOS" target="_blank" rel="noopener noreferrer">
-          Github
-        </a>
-      ),
-      key: 'git'
-    },
-    {
-      label: (
         <a className='menuLink' onClick={() => handleScroll(1)} target="_blank" rel="noopener noreferrer">
-          Contacts
+          Register
         </a>
       ),
       key: "contacts"
@@ -67,12 +58,8 @@ function App() {
 
   return (
     <>
-      <Layout>
-        <Header  style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between'
-        }}>
+      <Layout style={{border:0}}>
+        <Header id="headerDiv">
           <img className="logo" src={dsosLogo} alt="" />  
           <ConfigProvider  
           theme={{
@@ -82,6 +69,7 @@ function App() {
                 darkItemHoverColor:"rgba(255, 255, 255, 0.65)",
                 darkItemSelectedColor: "#66D9FF",
                 horizontalItemBorderRadius: 10,
+                inlineCollapsed: true
               }
             }
             
@@ -92,19 +80,7 @@ function App() {
               mode="horizontal"
               defaultSelectedKeys={['home']}
               items={items}
-            />   
-            <Menu
-              id="hamburgerMenu"
-              theme="dark"
-              mode="horizontal"
-              items={[{
-                label: (
-                <a style={{marginTop: 0}} href="https://github.com/DSxOS" target="_blank" rel="noopener noreferrer">
-                  <GithubOutlined style={{fontSize:24}} />  
-                </a>),
-                key:"git"
-              }]}
-            />  
+            />
           </ConfigProvider>
                          
           
@@ -225,11 +201,10 @@ function App() {
               </Col>
               <Col span={4} className='extra'></Col>
             </Row>
-            <CTA></CTA>
+            
           </Content>
         </Layout>
-        <Footer id="footer"><Contacts>
-          </Contacts></Footer>
+        <Footer id="footer"><CTA></CTA></Footer>
       </Layout>
     </>
   )

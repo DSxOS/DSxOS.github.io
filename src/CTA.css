@@ -1,12 +1,10 @@
 #register button {
     background-color: #dc7805;
-    height: 40px;
-    width: 20%;
-    min-width: 100px;
+    height: 50px;
+    min-width: 150px;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 22px;
     border: 0px;
-    margin-left: 10px;
 }
 
 #cta {
@@ -37,9 +35,10 @@
 }
 
 #register {
-    width: 50%;
-    flex-direction: row;
-    align-items: center;
+    width: 40%;
+    height: 500px;
+    margin-left: 5%;
+    border: 0;
 }
 
 #textDiv {
@@ -48,20 +47,35 @@
 
 #emailBox {
     height:40px;
-    width:50%;
+    width:70%;
+}
+
+#nameBox {
+    height: 40px;
+    width: 50%;
+}
+
+#orgBox {
+    height: 40px;
+    width: 70%;
+}
+
+#comment {
+    height: 70px;
+    width: 70%;
 }
 
 @media only screen and (max-width: 800px) {
-    #register button {
+   #register button {
         width: 40%;
         margin-top: 10px;
         margin-left: 0px;
 
     }
-
+ 
     #register {
         width: 100%;
-        flex-direction: column;
+        padding-left: 2.5%;        
     }
 
     #registerTitle {
@@ -79,12 +93,8 @@
     #cta {
         flex-direction: column !important;
         align-items: center;
-        
     }
-
-    #emailBox {
-        margin-top: 20px;
-        width: 60%;
+    #nameBox {
+        margin-top: 30px;
     }
-
 }

@@ -1,12 +1,13 @@
 #heroDiv {
     background-color: #091521;
-    height: 80vh;
-    padding: 50px;
+    height: 93dvh;
+    padding: 30px;
     background-image: url("/background.png");
     background-attachment: fixed;
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 #heroDiv h1 {
@@ -17,4 +18,52 @@
     text-transform: uppercase;
     font-size: 38px;
     font-weight: 600;
+}
+
+#arrow {
+    color: rgb(135, 169, 181);
+    font-size: 34px;
+    animation-name: bounce;
+    animation-duration:3s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 30px;
+    }
+    6% {
+        bottom: 26px;
+    }
+    10% {
+        bottom: 20px
+    }
+    18% {
+        bottom: 28px;
+    } 
+    
+    26% {
+        bottom: 20px
+    }
+    30% {
+        bottom: 26px;
+    }
+    40% {
+        bottom: 30px;
+    }
+    100% {
+        bottom: 30px
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    #heroDiv {
+        height: 90vh;
+    }   
 }

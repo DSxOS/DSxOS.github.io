@@ -19,7 +19,7 @@
 
 #footer {
   background-color: #091521;
-  padding-bottom: 80px;
+  
 }
 
 .featureDesc {
@@ -64,7 +64,7 @@
 
 #wideMenu {
   display: flex;
-  min-width: 350px;
+  min-width: 150px;
 }
 
 #wideMenu .menuLink {
@@ -80,8 +80,19 @@
   top: -5px;
 }
 
+#headerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7dvh;
+}
+
 
 @media only screen and (max-width: 800px) {
+  #headerDiv {
+    display: none;
+  }
+
   #intro {
     width: 80%;
   }
@@ -99,8 +110,8 @@
     flex-basis: 100%;
   }
 
-  #intro {
-
+  #footer {
+    padding-inline: 15px;
   }
 
   .imageCol {
@@ -111,11 +122,6 @@
     display: none;
   }
 
-  #hamburgerMenu {
-    display: block;
-    width: 60px;
-    height: 100%;
-  }
   header {
     padding-inline: 30px !important;
   }
