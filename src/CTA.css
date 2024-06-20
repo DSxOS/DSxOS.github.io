@@ -35,9 +35,9 @@
 }
 
 #register {
-    width: 40%;
-    height: 500px;
+    width: 40%;    
     margin-left: 5%;
+    padding-top: 30px;
     border: 0;
 }
 
@@ -63,6 +63,11 @@
 #comment {
     height: 70px;
     width: 70%;
+}
+
+#errorMessage {
+    font-size: 22px;
+    color: rgb(208, 23, 23);
 }
 
 @media only screen and (max-width: 800px) {
