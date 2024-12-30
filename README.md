@@ -1,7 +1,4 @@
-# DSxOS Introductory website
-
-Setup:
-run "npm install"
-
-Viewing:
-run "npm run dev"
+# DSxOS Introductory website testAPI
+ Setup:
+ run "npm install" Viewing:
+ run "npm run dev"
